@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --header-bg-color: #003b95;
+}
+
+.booking-header{
+    font-weight: 700;
+    color: white;
+    font-size: 1.7rem;
+    
+}
+
+.booking-categories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+.booking-categories > div {
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+}
+
+.booking-categories > div:nth-child(1){
+    border-radius: 20px;
+    outline: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.179);
+    
+}
+
+header {
+    height: fit-content;
+    background-color: var(--header-bg-color);
+    display: flex;
+    padding-left: 50px;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hotels{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.img-info-wrapper{
+    display: flex;
+    gap: 15px;
+}
+
+.each-hotel{
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    justify-content: space-between;
+    outline: 2px solid var(--header-bg-color)
+}
+
+.hotel-info h1, .location{
+    color: var(--header-bg-color)
+}
+
+.hotel-info h1:hover{
+    color: crimson;
+    cursor: pointer
+}
+
+.hotel-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+.hotel-img{
+    width: 220px;
+
+    border-radius: 6px;
+    object-fit: conver;
+}
+
+
+.statistics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px;
+}
+.price, .score{
+    color: var(--header-bg-color)
+
+}
+.score{
+    background-color: var(--header-bg-color);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    width: fit-content;
+
+}
+
+.price{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.hotel-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
